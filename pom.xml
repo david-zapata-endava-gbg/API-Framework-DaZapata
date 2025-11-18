@@ -63,7 +63,12 @@
     </dependency>
     
     <!-- WireMock for local HTTP stubs (used in tests to avoid external network calls) -->
-    <!-- WireMock removed: tests now call TheMovieDB directly in integration tests -->
+    <dependency>
+      <groupId>com.github.tomakehurst</groupId>
+      <artifactId>wiremock-jre8</artifactId>
+      <version>2.35.0</version>
+      <scope>test</scope>
+    </dependency>
   </dependencies>
 
   <build>
